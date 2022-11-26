@@ -11,7 +11,7 @@ c = mydb.cursor()
 
 
 def create_table():
-    c.execute('create table if not exists customer(customer_id int not null auto increment, email varchar(45), mobile varchar(45), ssn int, name varchar(45), primary key (customer_id))')
+    c.execute('create table if not exists customer(customer_id int not null auto increment, email varchar(45), mobile int, ssn int, name varchar(45), primary key (customer_id))')
 
     c.execute('create table if not exists E_Accessory(Accessory_id varchar(3) not null, model varchar(45), brand varchar(45), Cur_location_id varchar(3), date DATE, primary key (Accessory_id))')
 
