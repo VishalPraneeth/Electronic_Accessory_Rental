@@ -1,0 +1,1 @@
+select e.date,e.cur_location_id from E_Accessory as e inner join Accessory_type as a on e.accessory_id=a.type_id where a.type_desc="Apple";
